@@ -1,0 +1,51 @@
+.features {
+    padding: 94px 0;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    min-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+.features__card {
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0 0 30px 0;
+
+    border-radius: 4px;
+    background-color: $primary-section-bg-cl;
+}
+
+.features__title {
+    margin: 0 0 10px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features__text {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-cl;
+}

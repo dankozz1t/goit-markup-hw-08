@@ -1,0 +1,136 @@
+.portfolio {
+    padding: 94px 0;
+}
+
+.filter {
+    margin-bottom: 50px;
+}
+
+.filter__list {
+    display: flex;
+    justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter__btn {
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: $main-text-cl;
+    background-color: $primary-section-bg-cl;
+    cursor: pointer;
+
+    transition: color $transition-time $transition-cubic,
+        background-color $transition-time $transition-cubic,
+        box-shadow $transition-time $transition-cubic;
+
+    &:hover,
+    &:focus {
+        color: $light-text-cl;
+        background-color: $accent-bg-cl;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+}
+
+
+.examples__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examples__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    transition: box-shadow $transition-time $transition-cubic;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+
+.examples__link {
+    text-decoration: none;
+}
+
+.examples__overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.examples__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(101%);
+
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    padding-right: 24px;
+    padding-left: 24px;
+    height: 100%;
+
+    color: $light-text-cl;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform $transition-time $transition-cubic;
+
+    .examples__link:hover &,
+    .examples__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.examples__card {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+.examples__title {
+    margin: 0 0 4px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: $main-text-cl;
+}
+
+.examples__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: $main-text-cl;
+}

@@ -1,0 +1,28 @@
+.footer {
+    padding: 60px 0;
+    background-color: $secondary-bg-cl;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__info {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    margin: 15px 0 20px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: $light-text-cl;
+}

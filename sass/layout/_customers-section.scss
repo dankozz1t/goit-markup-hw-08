@@ -1,0 +1,37 @@
+.customers {
+    padding: 94px 0;
+}
+
+.customers-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.customers__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers__link {
+    width: 170px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    fill: $icon-color;
+
+    transition: border-color $transition-time $transition-cubic,
+        fill $transition-time $transition-cubic;
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-cl;
+        border-color: $accent-text-cl;
+    }
+}

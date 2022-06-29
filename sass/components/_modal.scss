@@ -1,0 +1,193 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    transition: opacity $transition-time $transition-cubic;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+
+    padding: 15px;
+
+    background-color: $main-bg-cl;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform $transition-time $transition-cubic;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    cursor: pointer;
+
+    background-color: $main-bg-cl;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: fill $transition-time $transition-cubic,
+        border-color $transition-time $transition-cubic;
+
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-cl;
+        border-color: $accent-text-cl;
+    }
+}
+
+.modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    color: $main-text-cl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__title {
+    margin: 25px 0 12px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form__label {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $secondary-text-cl;
+
+    .form__field:focus-within & {
+        color: $accent-text-cl;
+    }
+}
+
+.form__input {
+    width: 448px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    .form__field:focus-within & {
+        border-color: $accent-text-cl;
+    }
+}
+
+.form--required {
+    margin: 0 0 10px 0;
+    padding: 0 42px;
+    height: 40px;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-25%);
+    display: inline-block;
+
+    .form__field:focus-within & {
+        fill: $accent-text-cl;
+    }
+}
+
+.form__comment {
+    margin: 0 0 20px 0;
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+}
+
+.form__polity-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-cl;
+}
+
+.form__icon--check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    margin: 0 7px 0 0;
+
+    fill: $light-text-cl;
+    border: 2px solid $secondary-bg-cl;
+    border-radius: 2px;
+
+    .form__checkbox:checked+& {
+        background-color: $accent-bg-cl;
+        border: transparent;
+
+        transition: transform $transition-time $transition-cubic;
+    }
+
+    .form__checkbox:hover+&,
+    .form__checkbox:focus+& {
+        transform: scale(1.1);
+    }
+}
+
+.form__link {
+    color: $accent-text-cl;
+}
+
+.form__send {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: transform $transition-time $transition-cubic;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}

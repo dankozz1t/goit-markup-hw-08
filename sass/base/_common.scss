@@ -1,0 +1,29 @@
+body {
+    font-family: $main-font;
+    color: $main-text-cl;
+    background: $main-bg-cl;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+
+    transition: color $transition-time $transition-cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-text-cl;
+    }
+}

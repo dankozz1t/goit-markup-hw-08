@@ -1,0 +1,23 @@
+.header {
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid #ececec;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 94px;
+}

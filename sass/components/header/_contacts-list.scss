@@ -1,0 +1,33 @@
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin: 0 50px 0 0;
+}
+
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: $secondary-text-cl;
+  fill: $secondary-text-cl;
+
+  transition: color $transition-time $transition-cubic;
+
+
+  &:hover,
+  &:focus {
+    color: $accent-text-cl;
+    fill: $accent-text-cl;
+  }
+
+}
+
+.contacts-list__icon {
+  margin-right: 10px;
+}

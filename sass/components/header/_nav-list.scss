@@ -1,0 +1,31 @@
+.nav-list {
+    display: flex;
+}
+
+.nav-list__item:not(:last-child) {
+    margin: 0 50px 0 0;
+}
+
+.nav-list__link {
+    position: relative;
+
+    color: $main-text-cl;
+
+    &--current {
+        color: $accent-text-cl;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+
+            bottom: -33px;
+            width: 100%;
+            height: 4px;
+            background-color: $accent-bg-cl;
+            border-radius: 2px;
+
+            transition: color $transition-time $transition-cubic;
+        }
+    }
+}
