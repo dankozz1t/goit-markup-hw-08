@@ -3,14 +3,20 @@
 }
 
 .newsletter__box {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .newsletter__email {
-    margin: 0 12px 0 0;
+    margin: 0 0 20px 0;
     padding: 0 16px;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     color: $light-text-cl;
@@ -25,10 +31,17 @@
     &:focus-within {
         border-color: $accent-text-cl;
     }
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin: 0 12px 0 0;
+    }
 }
 
 .newsletter__btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 
@@ -42,6 +55,7 @@
         color: $accent-text-cl;
         background-color: $main-bg-cl;
     }
+
 }
 
 

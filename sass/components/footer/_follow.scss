@@ -1,5 +1,12 @@
 .follow__list {
     display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
 }
 
 .follow__item {

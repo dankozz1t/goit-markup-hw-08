@@ -1,23 +1,56 @@
 .header {
-    padding: 25px 0 25px 0;
+    padding: 16px 0;
     border-bottom: 1px solid #ececec;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        padding: 25px 0;
+
+        font-size: 14px;
+    }
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 94px;
+    }
 }
 
 .header__logo {
-    margin-right: 94px;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 94px;
+    }
+}
+
+.header__btn {
+
+    @media screen and (min-width: $table) {
+        display: none;
+    }
+
 }

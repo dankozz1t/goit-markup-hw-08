@@ -1,5 +1,12 @@
 .nav-list {
-    display: flex;
+    display: none;
+
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .nav-list__item:not(:last-child) {

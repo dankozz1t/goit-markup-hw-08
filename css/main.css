@@ -4,6 +4,7 @@
 /* Other colors */
 /* Other visuals vars */
 /* Transition */
+/* Adaptive */
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -31,9 +32,16 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 .backdrop {
@@ -251,39 +259,73 @@ body {
 }
 
 .title {
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
-  line-height: 1.16;
+}
+@media screen and (min-width: 1600px) {
+  .title {
+    margin: 0 0 50px 0;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .header {
-  padding: 25px 0 25px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 1600px) {
+  .header {
+    padding: 25px 0;
+    font-size: 14px;
+  }
+}
 
-.header__container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1600px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1600px) {
+  .header__nav {
+    margin-right: 94px;
+  }
 }
 
-.header__logo {
-  margin-right: 94px;
+@media screen and (min-width: 1600px) {
+  .header__logo {
+    margin-right: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
 }
 
 .nav-list {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .nav-list {
+    display: flex;
+  }
 }
 
 .nav-list__item:not(:last-child) {
@@ -310,8 +352,13 @@ body {
 }
 
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .contacts-list {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts-list__item:not(:last-child) {
@@ -337,25 +384,40 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  text-align: center;
-  padding: 200px 0px;
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 0px;
   margin: 0 auto;
+  text-align: center;
   color: #ffffff;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+  }
 }
 
 .hero__title {
   margin: 0px 0px 30px 0px;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
-  line-height: 1.36;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -367,22 +429,33 @@ body {
 }
 
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1600px) {
+  .features {
+    padding: 94px 0;
+  }
 }
 
 .features__list {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1600px) {
+  .features__list {
+    display: flex;
+  }
 }
 
-.features__item {
-  min-width: 270px;
-}
 .features__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1600px) {
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__card {
-  width: 270px;
   height: 120px;
   display: flex;
   align-items: center;
@@ -392,6 +465,11 @@ body {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 1600px) {
+  .features__card {
+    width: 270px;
+  }
+}
 
 .features__title {
   margin: 0 0 10px 0;
@@ -400,6 +478,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__text {
@@ -411,7 +495,13 @@ body {
 }
 
 .presentation {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .presentation {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .presentation__list {
@@ -444,11 +534,21 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1600px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team__list {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1600px) {
+  .team__list {
+    display: flex;
+  }
 }
 
 .team__item {
@@ -457,11 +557,32 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1600px) {
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__img {
+  height: 460px;
+  width: 450px;
+}
+@media screen and (min-width: 1600px) {
+  .team__img {
+    height: 260px;
+    width: 270px;
+  }
 }
 
 .team__info {
-  padding: 30px 0 30px 0;
+  padding: 30px 0 24px 0;
+}
+@media screen and (min-width: 1600px) {
+  .team__info {
+    padding: 30px 0 30px 0;
+  }
 }
 
 .team__name {
@@ -498,8 +619,8 @@ body {
 }
 
 .social-list__link {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,9 +632,20 @@ body {
   background-color: #2196f3;
   fill: #ffffff;
 }
+@media screen and (min-width: 1600px) {
+  .social-list__link {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .customers {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1600px) {
+  .customers {
+    padding: 94px 0;
+  }
 }
 
 .customers-list {
@@ -521,15 +653,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.customers__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .customers__link {
-  width: 170px;
-  height: 90px;
+  width: 210px;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,6 +672,12 @@ body {
   fill: #2196f3;
   border-color: #2196f3;
 }
+@media screen and (min-width: 1600px) {
+  .customers__link {
+    width: 170px;
+    height: 90px;
+  }
+}
 
 .footer {
   padding: 60px 0;
@@ -549,11 +685,20 @@ body {
 }
 
 .footer__container {
-  display: flex;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .footer__container {
+    display: flex;
+    text-align: start;
+  }
 }
 
-.footer__info {
-  margin-right: 70px;
+@media screen and (min-width: 1600px) {
+  .footer__info {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -562,12 +707,17 @@ body {
 }
 
 .footer__title {
-  margin: 15px 0 20px 0;
+  margin: 60px 0 15px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 1600px) {
+  .footer__title {
+    margin: 15px 0 20px 0;
+  }
 }
 
 .address {
@@ -578,7 +728,12 @@ body {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1600px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link--white {
@@ -591,6 +746,12 @@ body {
 
 .follow__list {
   display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1600px) {
+  .follow__list {
+    margin-right: 70px;
+  }
 }
 
 .follow__item {
@@ -620,13 +781,18 @@ body {
 }
 
 .newsletter__box {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1600px) {
+  .newsletter__box {
+    display: flex;
+  }
 }
 
 .newsletter__email {
-  margin: 0 12px 0 0;
+  margin: 0 0 20px 0;
   padding: 0 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: #ffffff;
   background: transparent;
@@ -638,9 +804,15 @@ body {
 .newsletter__email:focus-within {
   border-color: #2196f3;
 }
+@media screen and (min-width: 1600px) {
+  .newsletter__email {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+}
 
 .newsletter__btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: #ffffff;

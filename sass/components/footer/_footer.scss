@@ -4,11 +4,24 @@
 }
 
 .footer__container {
-    display: flex;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        text-align: start;
+    }
 }
 
 .footer__info {
-    margin-right: 70px;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
 }
 
 .footer__logo {
@@ -17,7 +30,7 @@
 }
 
 .footer__title {
-    margin: 15px 0 20px 0;
+    margin: 60px 0 15px 0;
 
     font-weight: 700;
     font-size: 14px;
@@ -25,4 +38,10 @@
     letter-spacing: 0.03em;
 
     color: $light-text-cl;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin: 15px 0 20px 0;
+    }
 }

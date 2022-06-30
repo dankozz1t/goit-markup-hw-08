@@ -1,5 +1,11 @@
 .customers {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+    }
 }
 
 .customers-list {
@@ -7,15 +13,24 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
 }
 
-.customers__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .customers__item {
+
+//     // @media screen and (min-width: $table) {}
+
+//     // @media screen and (min-width: $desktop) {
+//     //     margin-right: 30px;
+//     // }
+// }
 
 .customers__link {
-    width: 170px;
-    height: 90px;
+    width: 210px;
+    height: 92px;
 
     display: flex;
     align-items: center;
@@ -33,5 +48,12 @@
     &:focus {
         fill: $accent-text-cl;
         border-color: $accent-text-cl;
+    }
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+        height: 90px;
     }
 }

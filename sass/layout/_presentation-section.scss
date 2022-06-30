@@ -1,5 +1,12 @@
 .presentation {
-    padding-bottom: 94px;
+    display: none;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+        padding-bottom: 94px;
+    }
 }
 
 .presentation__list {

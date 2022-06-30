@@ -5,11 +5,12 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
+
 }
 
 .social-list__link {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 
     display: flex;
     align-items: center;
@@ -26,5 +27,12 @@
         border-radius: 50%;
         background-color: $accent-bg-cl;
         fill: $light-text-cl;
+    }
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
     }
 }

@@ -1,5 +1,14 @@
 .container {
-    width: 1200px;
+    width: $mobile;
     margin: 0 auto;
     padding: 0 15px;
+
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }
