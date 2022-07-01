@@ -1,8 +1,13 @@
 .container {
-    width: $mobile;
     margin: 0 auto;
     padding: 0 15px;
+    overflow: hidden;
 
+    width: 100%;
+
+    @media screen and (min-width: ($mobile + 1px)) {
+        width: $mobile;
+    }
 
     @media screen and (min-width: $table) {}
 

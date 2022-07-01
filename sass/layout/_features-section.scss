@@ -28,6 +28,7 @@
 
     @media screen and (min-width: $desktop) {
         &:not(:last-child) {
+            margin-bottom: 0px;
             margin-right: 30px;
         }
     }

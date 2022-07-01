@@ -2,6 +2,10 @@
 @import "./base/common";
 @import "./base/container";
 
+
+@import "./components/menu";
+
+
 @import "./components/modal";
 @import "./utils/visually-hidden";
 
@@ -12,6 +16,7 @@
 @import "./components/header/header";
 @import "./components/header/nav-list";
 @import "./components/header/contacts-list";
+@import "./components/header/mobile-social-list";
 
 @import "./layout/hero-section";
 @import "./layout/features-section";
