@@ -1000,7 +1000,7 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .footer__box {
-    margin-right: 70px;
+    margin: 0;
   }
 }
 
@@ -1030,7 +1030,7 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .footer__title {
-    margin: 15px 0 20px 0;
+    margin: 12px 0 20px 0;
   }
 }
 
@@ -1106,7 +1106,7 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .newsletter__box {
-    display: flex;
+    flex-direction: row;
   }
 }
 
