@@ -16,7 +16,9 @@
         padding: 208px 159px 0;
     }
 
-    @media screen and (min-width: $desktop) {}
+    @media screen and (min-width: $desktop) {
+        padding: 0;
+    }
 }
 
 .is-hidden {
@@ -48,8 +50,7 @@
     @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
-        // width: 528px;
-        // height: 581px;
+        max-width: 528px;
     }
 
 }
@@ -103,7 +104,7 @@
     @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
-        margin: 25px 0 12px 0;
+        margin: 0 0 12px 0;
         text-align: start;
     }
 }
@@ -134,7 +135,6 @@
 }
 
 .form__input {
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -143,12 +143,6 @@
         border-color: $accent-text-cl;
     }
 
-    @media screen and (min-width: $table) {}
-
-    @media screen and (min-width: $desktop) {
-        width: 448px;
-
-    }
 }
 
 .form--required {

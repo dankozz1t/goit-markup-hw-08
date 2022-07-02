@@ -141,6 +141,12 @@ body {
     padding: 208px 159px 0;
   }
 }
+@media screen and (min-width: 1600px) {
+  .backdrop {
+    padding: 0;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -161,6 +167,12 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1);
 }
+@media screen and (min-width: 1600px) {
+  .modal {
+    max-width: 528px;
+  }
+}
+
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -203,7 +215,7 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .form__title {
-    margin: 25px 0 12px 0;
+    margin: 0 0 12px 0;
     text-align: start;
   }
 }
@@ -234,11 +246,6 @@ body {
 }
 .form__field:focus-within .form__input {
   border-color: #2196f3;
-}
-@media screen and (min-width: 1600px) {
-  .form__input {
-    width: 448px;
-  }
 }
 
 .form--required {
