@@ -1,6 +1,6 @@
 .header__btn {
     display: inline-flex;
-    z-index: 1;
+    z-index: 2;
     color: black;
     border: 0;
     padding: 0;
@@ -37,6 +37,7 @@
 
 .menu-container {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100vw;
