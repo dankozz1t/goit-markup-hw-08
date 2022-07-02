@@ -3,8 +3,14 @@
     z-index: 2;
     top: 0;
     left: 0;
+    // width: 100%;
+    // height: 100%;
+
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
+    padding: 94px 15px;
+    // padding: 50px 30px;
     background: rgba(0, 0, 0, 0.2);
 
     transition: opacity $transition-time $transition-cubic;
@@ -20,10 +26,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
 
-    padding: 15px;
+
+    max-width: 450px;
+    width: 100%;
+    max-height: 609px;
+    padding: 40px;
+
 
     background-color: $main-bg-cl;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -35,6 +44,15 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.1);
     }
+
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        // width: 528px;
+        // height: 581px;
+    }
+
 }
 
 .modal__close-btn {
@@ -76,14 +94,24 @@
 }
 
 .form__title {
-    margin: 25px 0 12px 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin: 25px 0 12px 0;
+        text-align: start;
+    }
 }
 
 .form__field {
+    width: 100%;
+
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -101,10 +129,11 @@
     .form__field:focus-within & {
         color: $accent-text-cl;
     }
+
+
 }
 
 .form__input {
-    width: 448px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -113,23 +142,46 @@
     .form__field:focus-within & {
         border-color: $accent-text-cl;
     }
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        width: 448px;
+
+    }
 }
 
 .form--required {
+    height: 40px;
     margin: 0 0 10px 0;
     padding: 0 42px;
-    height: 40px;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin: 0 0 10px 0;
+        padding: 0 42px;
+        height: 40px;
+
+    }
 }
 
 .form__icon {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 12px;
     transform: translateY(-25%);
     display: inline-block;
 
     .form__field:focus-within & {
         fill: $accent-text-cl;
+    }
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        left: 15px;
+
     }
 }
 
@@ -137,7 +189,17 @@
     margin: 0 0 20px 0;
     padding: 12px 16px;
     height: 120px;
+
     resize: none;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        margin: 0 0 20px 0;
+        padding: 12px 16px;
+        height: 120px;
+
+    }
 }
 
 .form__polity-label {
@@ -145,12 +207,23 @@
     justify-content: center;
     align-items: center;
 
-    margin: 0 0 30px 0;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    margin: 0 0 30px 0;
+
+
 
     color: $secondary-text-cl;
+
+    @media screen and (min-width: $table) {}
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+
+
+    }
 }
 
 .form__icon--check {
@@ -183,6 +256,8 @@
 }
 
 .form__send {
+    align-self: center;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: transform $transition-time $transition-cubic;
