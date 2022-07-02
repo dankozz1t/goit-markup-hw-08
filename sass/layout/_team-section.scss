@@ -12,11 +12,13 @@
 .team__list {
     display: block;
 
-    @media screen and (min-width: $table) {}
-
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $table) {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
+
+    @media screen and (min-width: $desktop) {}
 }
 
 .team__item {
@@ -29,23 +31,24 @@
         margin-bottom: 30px;
     }
 
-    @media screen and (min-width: $table) {}
-
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $table) {
         &:not(:last-child) {
-            margin-bottom: 0px;
-            margin-right: 30px;
+            margin: 0;
         }
     }
+
+    @media screen and (min-width: $desktop) {}
 }
 
 .team__img {
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        width: 354px;
+    }
 
     @media screen and (min-width: $desktop) {
-        height: 260px;
         width: 270px;
+        height: 260px;
     }
 }
 

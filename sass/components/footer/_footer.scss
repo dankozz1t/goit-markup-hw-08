@@ -7,11 +7,28 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        // display: flex;
+        // text-align: start;
+    }
 
     @media screen and (min-width: $desktop) {
         display: flex;
         text-align: start;
+    }
+}
+
+.footer__box {
+
+
+    @media screen and (min-width: $table) {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 60px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
     }
 }
 
@@ -39,7 +56,9 @@
 
     color: $light-text-cl;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        margin: 0 0 20px 0;
+    }
 
     @media screen and (min-width: $desktop) {
         margin: 15px 0 20px 0;

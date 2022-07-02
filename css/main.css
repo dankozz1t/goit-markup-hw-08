@@ -823,12 +823,13 @@ body {
 .team__list {
   display: block;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
-
 .team__item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -837,17 +838,20 @@ body {
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .team__item:not(:last-child) {
-    margin-bottom: 0px;
-    margin-right: 30px;
+    margin: 0;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .team__img {
-    height: 260px;
     width: 270px;
+    height: 260px;
   }
 }
 
@@ -971,6 +975,19 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__box {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 60px 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer__box {
+    margin-right: 70px;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .footer__info {
     margin-right: 70px;
@@ -989,6 +1006,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    margin: 0 0 20px 0;
+  }
 }
 @media screen and (min-width: 1600px) {
   .footer__title {
@@ -1059,6 +1081,13 @@ body {
 .newsletter__box {
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .newsletter__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1600px) {
   .newsletter__box {
     display: flex;
@@ -1079,6 +1108,11 @@ body {
 }
 .newsletter__email:focus-within {
   border-color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .newsletter__email {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .newsletter__email {
