@@ -136,7 +136,11 @@ body {
   overflow-y: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 208px 159px 0;
+  }
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -190,6 +194,7 @@ body {
 }
 
 .form__title {
+  margin: 12px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
