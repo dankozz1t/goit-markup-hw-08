@@ -14,11 +14,7 @@
         // padding: 21px 0;
     }
 
-    @media screen and (min-width: $desktop) {
-        // padding: 25px 0;
-
-        font-size: 14px;
-    }
+    @media screen and (min-width: $desktop) {}
 }
 
 .header__container {
@@ -60,6 +56,9 @@
     }
 
     @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+
         margin-right: 94px;
     }
 }
