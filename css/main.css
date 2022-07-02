@@ -1159,6 +1159,11 @@ body {
 .filter {
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .filter {
     margin-bottom: 50px;
@@ -1170,6 +1175,11 @@ body {
   justify-content: start;
   flex-wrap: wrap;
   margin-top: -15px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1600px) {
   .filter__list {
@@ -1209,9 +1219,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .examples__list {
+    justify-content: start;
+    gap: 30px;
+  }
+}
 
 .examples__item {
-  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples__item:not(:last-child) {
@@ -1219,6 +1234,11 @@ body {
 }
 .examples__item:hover, .examples__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .examples__item {
+    width: calc((100% - 60px) / 2);
+  }
 }
 @media screen and (min-width: 1600px) {
   .examples__item {

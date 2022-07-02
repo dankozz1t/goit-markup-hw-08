@@ -11,7 +11,9 @@
 .filter {
     margin-bottom: 40px;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        margin-bottom: 30px;
+    }
 
     @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
@@ -24,7 +26,9 @@
     flex-wrap: wrap;
     margin-top: -15px;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        justify-content: center;
+    }
 
     @media screen and (min-width: $desktop) {
         justify-content: center;
@@ -76,11 +80,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media screen and (min-width: $table) {
+        justify-content: start;
+        gap: 30px;
+    }
 }
 
 .examples__item {
 
-    width: 100%;
+
 
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -95,7 +104,9 @@
     }
 
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        width: calc((100% - 60px) / 2)
+    }
 
     @media screen and (min-width: $desktop) {
         width: calc((100% - 60px) / 3);
@@ -127,7 +138,10 @@
 
     // height: 294px;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        // max-width: 354px;
+
+    }
 
     @media screen and (min-width: $desktop) {
         width: 370px;
