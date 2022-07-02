@@ -54,15 +54,21 @@
         transform: translateX(0);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $table) {
         position: static;
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        flex-grow: 1;
         padding: 0px;
-        font-size: 14px;
+        align-items: center;
 
-        width: auto;
-        height: auto;
+        transform: translateX(0);
+
+
+
     }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+
 }

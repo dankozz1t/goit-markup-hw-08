@@ -8,7 +8,11 @@
   }
 
 
-  @media screen and (min-width: $table) {}
+  @media screen and (min-width: $table) {
+    display: flex;
+    flex-direction: column;
+
+  }
 
   @media screen and (min-width: $desktop) {
     flex-direction: column;
@@ -18,7 +22,11 @@
 
 .contacts-list__item {
 
-  @media screen and (min-width: $table) {}
+  @media screen and (min-width: $table) {
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
@@ -60,12 +68,28 @@
     fill: $accent-text-cl;
   }
 
+  @media screen and (min-width: $table) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: $secondary-text-cl;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+
+  }
+
 }
 
 .contacts-list__icon {
   display: none;
 
-  @media screen and (min-width: $table) {}
+  @media screen and (min-width: $table) {
+    display: inline-flex;
+
+    margin-right: 8px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 10px;

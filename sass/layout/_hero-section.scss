@@ -21,7 +21,10 @@
 
     background-repeat: no-repeat;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        max-width: 768px;
+        height: 400px;
+    }
 
     @media screen and (min-width: $desktop) {
         max-width: 1600px;

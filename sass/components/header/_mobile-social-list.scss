@@ -9,7 +9,9 @@
 
     color: $accent-text-cl;
 
-    @media screen and (min-width: $table) {}
+    @media screen and (min-width: $table) {
+        display: none;
+    }
 
     @media screen and (min-width: $desktop) {
         display: none;
