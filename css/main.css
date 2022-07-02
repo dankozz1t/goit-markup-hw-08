@@ -726,6 +726,12 @@ body {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1600px) {
+  .features__list {
+    flex-wrap: nowrap;
+  }
+}
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }

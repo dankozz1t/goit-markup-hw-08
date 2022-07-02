@@ -16,7 +16,9 @@
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: $desktop) {}
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
 }
 
 .features__item {
