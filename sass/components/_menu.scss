@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     background-color: transparent;
+    transition: color $transition-time $transition-cubic;
 
     &:hover,
     &:focus {
@@ -46,12 +47,13 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    transform: translateX(100%);
+    transform: translateY(-100%);
 
+    transition: transform $transition-time $transition-cubic;
     padding: 48px 40px;
 
     &.is-open {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     @media screen and (min-width: $table) {
@@ -62,9 +64,6 @@
         align-items: center;
 
         transform: translateX(0);
-
-
-
     }
 
     @media screen and (min-width: $desktop) {
