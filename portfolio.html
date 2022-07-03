@@ -2,30 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header__container">
             <a class="logo header__logo" href="./index.html">
                 Web<span class="header__logo--black">Studio</span></a>
 
             <div class="menu-container" data-menu>
-
                 <nav class="header__nav">
                     <ul class="list nav-list">
                         <li class="nav-list__item">
@@ -82,8 +80,7 @@
                     <use class="header__icon-open" href="./images/icons.svg#icon-mobile-menu-open"
                         aria-label="icon mobile menu open"></use>
                     <use class="header__icon-close" href="./images/icons.svg#icon-mobile-menu-close"
-                        aria-label="icon mobile menu close">
-                    </use>
+                        aria-label="icon mobile menu close"></use>
                 </svg>
             </button>
         </div>
@@ -95,11 +92,21 @@
                 <div class="filter">
                     <h1 hidden>Examples of our work</h1>
                     <ul class="list filter__list">
-                        <li class="filter__item"><button class="filter__btn" type="button">All</button></li>
-                        <li class="filter__item"><button class="filter__btn" type="button">Web sites</button></li>
-                        <li class="filter__item"><button class="filter__btn" type="button">Applications</button></li>
-                        <li class="filter__item"><button class="filter__btn" type="button">Design</button></li>
-                        <li class="filter__item"><button class="filter__btn" type="button">Marketing</button></li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">All</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Web sites</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Applications</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Design</button>
+                        </li>
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Marketing</button>
+                        </li>
                     </ul>
                 </div>
 
@@ -107,13 +114,51 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-1.jpg"
-                                    alt="laptop with website">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-1-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-1-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-1-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-1-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-1-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-1-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-1-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-1-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-1-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-1-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-1-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-1-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-1-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-1-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-1-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-1-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-1-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-1-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-1-mobile@1x.jpg"
+                                        alt="laptop with website" />
+                                </picture>
                                 <div class="examples__info">
                                     <p>
-                                        The resource offers comprehensive offers with different levels
-                                        functionality and services. All&nbsp;this&nbsp;will&nbsp;allow the visitor to
-                                        receive&nbsp;comprehensive information about company or individual.
+                                        The resource offers comprehensive offers with different
+                                        levels functionality and services.
+                                        All&nbsp;this&nbsp;will&nbsp;allow the visitor to
+                                        receive&nbsp;comprehensive information about company or
+                                        individual.
                                     </p>
                                 </div>
                             </div>
@@ -127,19 +172,57 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-2.jpg"
-                                    alt="Two men with a basketball">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-2-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-2-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-2-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-2-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-2-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-2-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-2-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-2-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-2-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-2-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-2-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-2-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-2-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-2-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-2-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-2-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-2-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-2-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-2-mobile@1x.jpg"
+                                        alt="Two men with a basketball" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
                             <div class="examples__card">
-                                <h2 class="examples__title">Poster New Orlean vs Golden Star</h2>
+                                <h2 class="examples__title">
+                                    Poster New Orlean vs Golden Star
+                                </h2>
                                 <p class="examples__text">Design</p>
                             </div>
                         </a>
@@ -147,14 +230,50 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-3.jpg" alt="Restaurant logo"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-3-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-3-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-3-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-3-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-3-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-3-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-3-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-3-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-3-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-3-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-3-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-3-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-3-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-3-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-3-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-3-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-3-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-3-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-3-mobile@1x.jpg"
+                                        alt="Restaurant logo" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -167,14 +286,50 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-4.jpg" alt="Headphones"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-4-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-4-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-4-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-4-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-4-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-4-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-4-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-4-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-4-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-4-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-4-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-4-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-4-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-4-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-4-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-4-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-4-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-4-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-4-mobile@1x.jpg"
+                                        alt="Headphones" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -187,14 +342,49 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-5.jpg" alt="Two boxes"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-5-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-5-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-5-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-5-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-5-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-5-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-5-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-5-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-5-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-5-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-5-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-5-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-5-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-5-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-5-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-5-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-5-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-5-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-5-mobile@1x.jpg" alt="Two boxes" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -207,14 +397,50 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-6.jpg" alt="Website monitor"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-6-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-6-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-6-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-6-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-6-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-6-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-6-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-6-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-6-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-6-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-6-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-6-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-6-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-6-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-6-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-6-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-6-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-6-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-6-mobile@1x.jpg"
+                                        alt="Website monitor" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -227,14 +453,50 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-7.jpg" alt="Opened book"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-7-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-7-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-7-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-7-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-7-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-7-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-7-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-7-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-7-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-7-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-7-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-7-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-7-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-7-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-7-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-7-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-7-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-7-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-7-mobile@1x.jpg"
+                                        alt="Opened book" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -247,14 +509,49 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-8.jpg" alt="Logo tag"
-                                    width="370" height="294">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-8-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-8-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-8-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-8-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-8-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-8-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
+
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-8-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-8-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-8-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-8-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-8-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-8-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-8-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-8-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-8-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-8-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-8-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-8-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-8-mobile@1x.jpg" alt="Logo tag" />
+                                </picture>
 
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -267,14 +564,49 @@
                     <li class="examples__item">
                         <a class="examples__link" href="#">
                             <div class="examples__overlay">
-                                <img class="img examples__img" src="./images/portfolio-card-9.jpg"
-                                    alt="Laptop with application">
+                                <picture>
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-9-desktop@1x.webp 1x,
+                        ./images/examples/desktop/portfolio-card-9-desktop@2x.webp 2x,
+                        ./images/examples/desktop/portfolio-card-9-desktop@3x.webp 3x
+                      " media="(min-width: 1200px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/desktop/portfolio-card-9-desktop@1x.jpg 1x,
+                        ./images/examples/desktop/portfolio-card-9-desktop@2x.jpg 2x,
+                        ./images/examples/desktop/portfolio-card-9-desktop@3x.jpg 3x
+                      " media="(min-width: 1200px)" />
 
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-9-table@1x.webp 1x,
+                        ./images/examples/table/portfolio-card-9-table@2x.webp 2x,
+                        ./images/examples/table/portfolio-card-9-table@3x.webp 3x
+                      " media="(min-width: 768px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/table/portfolio-card-9-table@1x.jpg 1x,
+                        ./images/examples/table/portfolio-card-9-table@2x.jpg 2x,
+                        ./images/examples/table/portfolio-card-9-table@3x.jpg 3x
+                      " media="(min-width: 768px)" />
+
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-9-mobile@1x.webp 1x,
+                        ./images/examples/mobile/portfolio-card-9-mobile@2x.webp 2x,
+                        ./images/examples/mobile/portfolio-card-9-mobile@3x.webp 3x
+                      " media="(max-width: 767px)" type="image/webp" />
+                                    <source srcset="
+                        ./images/examples/mobile/portfolio-card-9-mobile@1x.jpg 1x,
+                        ./images/examples/mobile/portfolio-card-9-mobile@2x.jpg 2x,
+                        ./images/examples/mobile/portfolio-card-9-mobile@3x.jpg 3x
+                      " media="(max-width: 767px)" />
+
+                                    <img class="img examples__img"
+                                        src="./images/examples/mobile/portfolio-card-9-mobile@1x.jpg"
+                                        alt="Laptop with application" />
+                                </picture>
                                 <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        Distinctio&nbsp;voluptatem dolorum, molestias dolor sunt
+                                        sit adipisci debitis, earum eaque illum vero
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +693,6 @@
                 </div>
             </form>
         </div>
-
     </footer>
 
     <script src="./js/menu.js"></script>
