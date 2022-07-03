@@ -1,10 +1,13 @@
 .header__btn {
-    display: inline-flex;
     z-index: 2;
-    color: black;
-    border: 0;
-    padding: 0;
+    display: inline-flex;
+
     margin: 0;
+    padding: 0;
+    border: 0;
+
+    color: black;
+
     background-color: transparent;
     transition: color $transition-time $transition-cubic;
 
@@ -12,7 +15,6 @@
     &:focus {
         color: $accent-text-cl;
     }
-
 
     .header__icon-open,
     .header__icon-close {
@@ -37,20 +39,24 @@
 }
 
 .menu-container {
-    position: fixed;
     z-index: 1;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100%;
-    padding: 32px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
     transform: translateY(-100%);
 
-    transition: transform $transition-time $transition-cubic;
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100%;
+
     padding: 48px 40px;
+
+    background-color: #fff;
+
+    transition: transform $transition-time $transition-cubic;
+
 
     &.is-open {
         transform: translateY(0);
@@ -58,16 +64,13 @@
 
     @media screen and (min-width: $table) {
         position: static;
+
         flex-direction: row;
         justify-content: space-between;
-        padding: 0px;
         align-items: center;
+
+        padding: 0px;
 
         transform: translateX(0);
     }
-
-    @media screen and (min-width: $desktop) {
-        display: flex;
-    }
-
 }

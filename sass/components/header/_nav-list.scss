@@ -30,16 +30,8 @@
 
         &:not(:last-child) {
             margin: 0 50px 0 0;
-
         }
     }
-
-    @media screen and (min-width: $desktop) {
-        &:not(:last-child) {
-            margin: 0 50px 0 0;
-        }
-    }
-
 }
 
 
@@ -50,14 +42,10 @@
 
     &--current {
         color: $accent-text-cl;
-
     }
 
     @media screen and (min-width: $table) {
-
-
         padding: 32px 0;
-
 
         &--current::after {
             content: ' ';
@@ -69,10 +57,7 @@
             border-radius: 2px;
             background-color: $accent-bg-cl;
 
-
             transition: color $transition-time $transition-cubic;
         }
     }
-
-    @media screen and (min-width: $desktop) {}
 }

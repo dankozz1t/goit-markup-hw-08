@@ -8,8 +8,6 @@
 .address__item:not(:last-child) {
     margin-bottom: 8px;
 
-    @media screen and (min-width: $table) {}
-
     @media screen and (min-width: $desktop) {
         margin-bottom: 9px;
     }

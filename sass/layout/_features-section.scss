@@ -1,8 +1,6 @@
 .features {
     padding: 60px 0;
 
-    @media screen and (min-width: $table) {}
-
     @media screen and (min-width: $desktop) {
         padding: 94px 0;
     }
@@ -46,6 +44,7 @@
 
 .features__card {
     height: 120px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +54,6 @@
 
     border-radius: 4px;
     background-color: $primary-section-bg-cl;
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         width: 270px;
@@ -77,8 +74,6 @@
     @media screen and (min-width: $table) {
         text-align: start;
     }
-
-    @media screen and (min-width: $desktop) {}
 }
 
 .features__text {
@@ -89,5 +84,4 @@
     letter-spacing: 0.03em;
 
     color: $secondary-text-cl;
-
 }

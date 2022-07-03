@@ -2,8 +2,6 @@
     background-color: $primary-section-bg-cl;
     padding: 60px 0;
 
-    @media screen and (min-width: $table) {}
-
     @media screen and (min-width: $desktop) {
         padding: 94px 0;
     }
@@ -17,8 +15,6 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-
-    @media screen and (min-width: $desktop) {}
 }
 
 .team__item {
@@ -36,8 +32,6 @@
             margin: 0;
         }
     }
-
-    @media screen and (min-width: $desktop) {}
 }
 
 .team__img {
@@ -54,8 +48,6 @@
 
 .team__info {
     padding: 30px 0 24px 0;
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         padding: 30px 0 30px 0;
@@ -75,8 +67,8 @@
 }
 
 .team__occupation {
-    text-align: center;
     margin: 0 0 16px 0;
+    text-align: center;
 
     font-size: 16px;
     line-height: 1.18;

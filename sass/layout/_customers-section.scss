@@ -1,8 +1,6 @@
 .customers {
     padding: 60px 0;
 
-    @media screen and (min-width: $table) {}
-
     @media screen and (min-width: $desktop) {
         padding: 94px 0;
     }
@@ -10,14 +8,13 @@
 
 .customers-list {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 
-    justify-content: center;
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .customers__link {
@@ -41,8 +38,6 @@
         fill: $accent-text-cl;
         border-color: $accent-text-cl;
     }
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         width: 170px;

@@ -1,6 +1,4 @@
 .mobile-social-list {
-
-
     margin-top: 64px;
 
     font-size: 18px;
@@ -12,19 +10,13 @@
     @media screen and (min-width: $table) {
         display: none;
     }
-
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
 }
-
 
 .mobile-social-list__item {
     display: inline-flex;
 
     &:not(:last-child) {
         padding-right: 10px;
-
     }
 
     &:not(:last-child)::after {
@@ -35,20 +27,16 @@
     }
 }
 
-
-
-
 .mobile-social-list__link {
     display: block;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2196f3;
+
     text-decoration: none;
-
-
-    @media screen and (min-width: $table) {}
+    color: #2196f3;
 
     @media screen and (min-width: $desktop) {
         display: none;

@@ -5,7 +5,6 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
-
 }
 
 .social-list__link {
@@ -28,8 +27,6 @@
         background-color: $accent-bg-cl;
         fill: $light-text-cl;
     }
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         width: 40px;

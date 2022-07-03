@@ -7,11 +7,6 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: $table) {
-        // display: flex;
-        // text-align: start;
-    }
-
     @media screen and (min-width: $desktop) {
         display: flex;
         text-align: start;
@@ -19,7 +14,6 @@
 }
 
 .footer__box {
-
 
     @media screen and (min-width: $table) {
         display: flex;
@@ -33,8 +27,6 @@
 }
 
 .footer__info {
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         margin-right: 70px;

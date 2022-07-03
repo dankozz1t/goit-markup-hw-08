@@ -1,11 +1,11 @@
 .hero {
     max-width: 480px;
     height: 400px;
-    padding: 118px 0px;
 
     margin: 0 auto;
-    text-align: center;
+    padding: 118px 0px;
 
+    text-align: center;
 
     color: $light-text-cl;
     background-color: $secondary-bg-cl;
@@ -43,9 +43,6 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-
-    @media screen and (min-width: $table) {}
 
     @media screen and (min-width: $desktop) {
         font-size: 44px;

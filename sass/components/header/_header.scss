@@ -8,26 +8,15 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-
     @media screen and (min-width: $table) {
         padding: 0;
-        // padding: 21px 0;
     }
-
-    @media screen and (min-width: $desktop) {}
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media screen and (min-width: $table) {}
-
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: center;
-    }
 }
 
 .header__nav {
@@ -68,5 +57,4 @@
     @media screen and (min-width: $table) {
         display: none;
     }
-
 }
