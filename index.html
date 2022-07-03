@@ -24,7 +24,6 @@
                 Web<span class="header__logo--black">Studio</span></a>
 
             <div class="menu-container" data-menu>
-
                 <nav class="header__nav">
                     <ul class="list nav-list">
                         <li class="nav-list__item">
@@ -81,8 +80,7 @@
                     <use class="header__icon-open" href="./images/icons.svg#icon-mobile-menu-open"
                         aria-label="icon mobile menu open"></use>
                     <use class="header__icon-close" href="./images/icons.svg#icon-mobile-menu-close"
-                        aria-label="icon mobile menu close">
-                    </use>
+                        aria-label="icon mobile menu close"></use>
                 </svg>
             </button>
         </div>
@@ -98,7 +96,6 @@
             <button class="btn hero__btn" data-modal-open type="button">
                 Order service
             </button>
-
         </section>
 
         <section class="features">
@@ -185,7 +182,44 @@
                 <h2 class="title">Our team</h2>
                 <ul class="list team__list">
                     <li class="team__item">
-                        <img class="img team__img" src="./images/igor-demyanenko.jpg" alt="photo by Igor Demyanenko" />
+                        <picture>
+                            <source srcset="
+                    ./images/team/desktop/igor-demyanenko-desktop@1x.webp 1x,
+                    ./images/team/desktop/igor-demyanenko-desktop@2x.webp 2x,
+                    ./images/team/desktop/igor-demyanenko-desktop@3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/desktop/igor-demyanenko-desktop@1x.jpg 1x,
+                    ./images/team/desktop/igor-demyanenko-desktop@2x.jpg 2x,
+                    ./images/team/desktop/igor-demyanenko-desktop@3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+
+                            <source srcset="
+                    ./images/team/table/igor-demyanenko-table@1x.webp 1x,
+                    ./images/team/table/igor-demyanenko-table@2x.webp 2x,
+                    ./images/team/table/igor-demyanenko-table@3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/table/igor-demyanenko-table@1x.jpg 1x,
+                    ./images/team/table/igor-demyanenko-table@2x.jpg 2x,
+                    ./images/team/table/igor-demyanenko-table@3x.jpg 3x
+                  " media="(min-width: 768px)" />
+
+                            <source srcset="
+                    ./images/team/mobile/igor-demyanenko-mobile@1x.webp 1x,
+                    ./images/team/mobile/igor-demyanenko-mobile@2x.webp 2x,
+                    ./images/team/mobile/igor-demyanenko-mobile@3x.webp 3x
+                  " media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/mobile/igor-demyanenko-mobile@1x.jpg 1x,
+                    ./images/team/mobile/igor-demyanenko-mobile@2x.jpg 2x,
+                    ./images/team/mobile/igor-demyanenko-mobile@3x.jpg 3x
+                  " media="(max-width: 767px)" />
+
+                            <img class="img team__img" src="./images/team/mobile/igor-demyanenko-mobile@1x.jpg"
+                                alt="photo by Igor Demyanenko" />
+                        </picture>
+
                         <div class="team__info">
                             <h3 class="team__name">Igor Demyanenko</h3>
                             <p class="team__occupation">Product Designer</p>
@@ -223,7 +257,43 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="img team__img" src="./images/olga-repina.jpg" alt="photo by Olga Repina" />
+                        <picture>
+                            <source srcset="
+                    ./images/team/desktop/olga-repina-desktop@1x.webp 1x,
+                    ./images/team/desktop/olga-repina-desktop@2x.webp 2x,
+                    ./images/team/desktop/olga-repina-desktop@3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/desktop/olga-repina-desktop@1x.jpg 1x,
+                    ./images/team/desktop/olga-repina-desktop@2x.jpg 2x,
+                    ./images/team/desktop/olga-repina-desktop@3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+
+                            <source srcset="
+                    ./images/team/table/olga-repina-table@1x.webp 1x,
+                    ./images/team/table/olga-repina-table@2x.webp 2x,
+                    ./images/team/table/olga-repina-table@3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/table/olga-repina-table@1x.jpg 1x,
+                    ./images/team/table/olga-repina-table@2x.jpg 2x,
+                    ./images/team/table/olga-repina-table@3x.jpg 3x
+                  " media="(min-width: 768px)" />
+
+                            <source srcset="
+                    ./images/team/mobile/olga-repina-mobile@1x.webp 1x,
+                    ./images/team/mobile/olga-repina-mobile@2x.webp 2x,
+                    ./images/team/mobile/olga-repina-mobile@3x.webp 3x
+                  " media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/mobile/olga-repina-mobile@1x.jpg 1x,
+                    ./images/team/mobile/olga-repina-mobile@2x.jpg 2x,
+                    ./images/team/mobile/olga-repina-mobile@3x.jpg 3x
+                  " media="(max-width: 767px)" />
+
+                            <img class="img team__img" src="./images/team/mobile/olga-repina-mobile@1x.jpg"
+                                alt="photo by Olga Repina" />
+                        </picture>
                         <div class="team__info">
                             <h3 class="team__name">Olga Repina</h3>
                             <p class="team__occupation">Frontend Developer</p>
@@ -260,7 +330,43 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="img team__img" src="./images/nikolai-tarasov.jpg" alt="photo by Nikolai Tarasov" />
+                        <picture>
+                            <source srcset="
+                    ./images/team/desktop/nikolai-tarasov-desktop@1x.webp 1x,
+                    ./images/team/desktop/nikolai-tarasov-desktop@2x.webp 2x,
+                    ./images/team/desktop/nikolai-tarasov-desktop@3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/desktop/nikolai-tarasov-desktop@1x.jpg 1x,
+                    ./images/team/desktop/nikolai-tarasov-desktop@2x.jpg 2x,
+                    ./images/team/desktop/nikolai-tarasov-desktop@3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+
+                            <source srcset="
+                    ./images/team/table/nikolai-tarasov-table@1x.webp 1x,
+                    ./images/team/table/nikolai-tarasov-table@2x.webp 2x,
+                    ./images/team/table/nikolai-tarasov-table@3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/table/nikolai-tarasov-table@1x.jpg 1x,
+                    ./images/team/table/nikolai-tarasov-table@2x.jpg 2x,
+                    ./images/team/table/nikolai-tarasov-table@3x.jpg 3x
+                  " media="(min-width: 768px)" />
+
+                            <source srcset="
+                    ./images/team/mobile/nikolai-tarasov-mobile@1x.webp 1x,
+                    ./images/team/mobile/nikolai-tarasov-mobile@2x.webp 2x,
+                    ./images/team/mobile/nikolai-tarasov-mobile@3x.webp 3x
+                  " media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/mobile/nikolai-tarasov-mobile@1x.jpg 1x,
+                    ./images/team/mobile/nikolai-tarasov-mobile@2x.jpg 2x,
+                    ./images/team/mobile/nikolai-tarasov-mobile@3x.jpg 3x
+                  " media="(max-width: 767px)" />
+
+                            <img class="img team__img" src="./images/team/mobile/nikolai-tarasov-mobile@1x.jpg"
+                                alt="photo by Nikolai Tarasov" />
+                        </picture>
                         <div class="team__info">
                             <h3 class="team__name">Nikolai Tarasov</h3>
                             <p class="team__occupation">Marketing</p>
@@ -297,7 +403,43 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="img team__img" src="./images/mikhail-ermakov.jpg" alt="photo by Mikhail Ermakov" />
+                        <picture>
+                            <source srcset="
+                    ./images/team/desktop/mikhail-ermakov-desktop@1x.webp 1x,
+                    ./images/team/desktop/mikhail-ermakov-desktop@2x.webp 2x,
+                    ./images/team/desktop/mikhail-ermakov-desktop@3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/desktop/mikhail-ermakov-desktop@1x.jpg 1x,
+                    ./images/team/desktop/mikhail-ermakov-desktop@2x.jpg 2x,
+                    ./images/team/desktop/mikhail-ermakov-desktop@3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+
+                            <source srcset="
+                    ./images/team/table/mikhail-ermakov-table@1x.webp 1x,
+                    ./images/team/table/mikhail-ermakov-table@2x.webp 2x,
+                    ./images/team/table/mikhail-ermakov-table@3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/table/mikhail-ermakov-table@1x.jpg 1x,
+                    ./images/team/table/mikhail-ermakov-table@2x.jpg 2x,
+                    ./images/team/table/mikhail-ermakov-table@3x.jpg 3x
+                  " media="(min-width: 768px)" />
+
+                            <source srcset="
+                    ./images/team/mobile/mikhail-ermakov-mobile@1x.webp 1x,
+                    ./images/team/mobile/mikhail-ermakov-mobile@2x.webp 2x,
+                    ./images/team/mobile/mikhail-ermakov-mobile@3x.webp 3x
+                  " media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="
+                    ./images/team/mobile/mikhail-ermakov-mobile@1x.jpg 1x,
+                    ./images/team/mobile/mikhail-ermakov-mobile@2x.jpg 2x,
+                    ./images/team/mobile/mikhail-ermakov-mobile@3x.jpg 3x
+                  " media="(max-width: 767px)" />
+
+                            <img class="img team__img" src="./images/team/mobile/mikhail-ermakov-mobile@1x.jpg"
+                                alt="photo by Mikhail Ermakov" />
+                        </picture>
                         <div class="team__info">
                             <h3 class="team__name">Mikhail Ermakov</h3>
                             <p class="team__occupation">UI Designer</p>
@@ -463,7 +605,6 @@
                 </div>
             </form>
         </div>
-
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -475,9 +616,7 @@
             </button>
 
             <form class="form" name="order-form">
-                <h1 class="form__title">
-                    Leave your details, we will call you back
-                </h1>
+                <h1 class="form__title">Leave your details, we will call you back</h1>
                 <div class="form__field">
                     <label class="form__label" for="name">Name</label>
                     <input class="form__input form--required" type="text" required name="name" id="name" autofocus />
@@ -509,7 +648,7 @@
 
                 <div class="form__field">
                     <label class="form__polity-label" for="policy">
-                        <input class="visually-hidden  form__checkbox" required type="checkbox" name="policy"
+                        <input class="visually-hidden form__checkbox" required type="checkbox" name="policy"
                             id="policy" />
                         <span class="form__icon--check">
                             <svg width="16" height="15">
@@ -521,7 +660,6 @@
                             <a class="form__link" href="">Adipisicing elit</a>
                         </span>
                     </label>
-
 
                     <button class="btn form__send" data-modal-open type="submit">
                         Send
