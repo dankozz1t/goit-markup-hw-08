@@ -77,6 +77,7 @@
 
     @media screen and (min-width: $table) {
         justify-content: start;
+        align-items: stretch;
         gap: 30px;
     }
 }
@@ -109,7 +110,10 @@
 }
 
 .examples__link {
+    height: 100%;
+    display: flex;
     text-decoration: none;
+    flex-direction: column;
 }
 
 .examples__overlay {
@@ -156,6 +160,7 @@
 }
 
 .examples__card {
+    flex-grow: 1;
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
