@@ -7,51 +7,27 @@
     }
 }
 
-
-// .team {
-//     background-color: var(--primary-section-bg-cl);
-
-
-//     @media screen and (min-width: ($desktop - 1px)) {
-//         padding: 60px 0;
-//     }
-
-//     @media screen and (min-width: $desktop) {
-//         padding: 94px 0;
-//     }
-// }
-
 .team__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
 
-    @media screen and (max-width: ($table - 1px)) {
-        flex-direction: column;
-    }
 
     @media screen and (min-width: $table) {
+        flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
-// .team__list {
-//     display: flex;
-//     gap: 30px;
-//     flex-direction: column;
-
-
-//     @media screen and (min-width: $table) {
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//     }
-// }
-
 .team__item {
     background-color: var(--main-bg-cl);
+
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+        0px 1px 1px rgb(0 0 0 / 14%),
+        0px 2px 1px rgb(0 0 0 / 20%);
 }
+
 
 .team__img {
 
