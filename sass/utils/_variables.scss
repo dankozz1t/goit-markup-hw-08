@@ -1,32 +1,34 @@
-  /* Fonts */
-  $main-font: 'Roboto',
-  sans-serif;
-  $secondary-font: 'Raleway',
-  sans-serif;
+  :root {
+    /* Fonts */
+    --main-font: 'Roboto',
+      sans-serif;
+    --secondary-font: 'Raleway',
+      sans-serif;
 
-  /* Text colors */
-  $main-text-cl: #212121;
-  $secondary-text-cl: #757575;
-  $accent-text-cl: #2196f3;
-  $light-text-cl: #ffffff;
+    /* Text colors */
+    --main-text-cl: #212121;
+    --secondary-text-cl: #757575;
+    --accent-text-cl: #2196f3;
+    --light-text-cl: #ffffff;
 
-  /* Background colors */
+    /* Background colors */
 
-  $main-bg-cl: #ffffff;
-  $secondary-bg-cl: #2f303a;
+    --main-bg-cl: #ffffff;
+    --secondary-bg-cl: #2f303a;
 
-  $primary-section-bg-cl: #f5f4fa;
-  $accent-bg-cl: #2196f3;
+    --primary-section-bg-cl: #f5f4fa;
+    --accent-bg-cl: #2196f3;
 
-  /* Other colors */
-  $address-color: rgba(255, 255, 255, 0.6);
-  $icon-color: #afb1b8;
+    /* Other colors */
+    --address-color: rgba(255, 255, 255, 0.6);
+    --icon-color: #afb1b8;
 
-  /* Other visuals vars */
+    /* Other visuals vars */
 
-  /* Transition */
-  $transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  $transition-time: 250ms;
+    /* Transition */
+    --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-time: 250ms;
+  }
 
   /* Adaptive */
   $mobile: 480px;

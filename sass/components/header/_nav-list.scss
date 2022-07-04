@@ -38,10 +38,10 @@
 .nav-list__link {
     position: relative;
 
-    color: $main-text-cl;
+    color: var(--main-text-cl);
 
     &--current {
-        color: $accent-text-cl;
+        color: var(--accent-text-cl);
     }
 
     @media screen and (min-width: $table) {
@@ -55,9 +55,9 @@
             width: 100%;
             height: 4px;
             border-radius: 2px;
-            background-color: $accent-bg-cl;
+            background-color: var(--accent-bg-cl);
 
-            transition: color $transition-time $transition-cubic;
+            transition: color var(--transition-time) var(--transition-cubic);
         }
     }
 }

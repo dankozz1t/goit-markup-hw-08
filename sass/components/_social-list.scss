@@ -15,17 +15,17 @@
     align-items: center;
     justify-content: center;
 
-    fill: $icon-color;
+    fill: var(--icon-color);
 
-    transition: background-color $transition-time $transition-cubic,
-        fill $transition-time $transition-cubic,
-        border-radius $transition-time $transition-cubic;
+    transition: background-color var(--transition-time) var(--transition-cubic),
+        fill var(--transition-time) var(--transition-cubic),
+        border-radius var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
         border-radius: 50%;
-        background-color: $accent-bg-cl;
-        fill: $light-text-cl;
+        background-color: var(--accent-bg-cl);
+        fill: var(--light-text-cl);
     }
 
     @media screen and (min-width: $desktop) {

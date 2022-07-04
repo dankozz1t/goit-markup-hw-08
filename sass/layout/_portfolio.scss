@@ -52,18 +52,18 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-    color: $main-text-cl;
-    background-color: $primary-section-bg-cl;
+    color: var(--main-text-cl);
+    background-color: var(--primary-section-bg-cl);
     cursor: pointer;
 
-    transition: color $transition-time $transition-cubic,
-        background-color $transition-time $transition-cubic,
-        box-shadow $transition-time $transition-cubic;
+    transition: color var(--transition-time) var(--transition-cubic),
+        background-color var(--transition-time) var(--transition-cubic),
+        box-shadow var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
-        color: $light-text-cl;
-        background-color: $accent-bg-cl;
+        color: var(--light-text-cl);
+        background-color: var(--accent-bg-cl);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
     }
@@ -86,7 +86,7 @@
         margin-bottom: 30px;
     }
 
-    transition: box-shadow $transition-time $transition-cubic;
+    transition: box-shadow var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
@@ -144,10 +144,10 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
 
-    color: $light-text-cl;
+    color: var(--light-text-cl);
     background-color: rgba(33, 150, 243, 0.9);
 
-    transition: transform $transition-time $transition-cubic;
+    transition: transform var(--transition-time) var(--transition-cubic);
 
     .examples__link:hover &,
     .examples__link:focus & {
@@ -168,7 +168,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
 
-    color: $main-text-cl;
+    color: var(--main-text-cl);
 }
 
 .examples__text {
@@ -177,5 +177,5 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
 
-    color: $main-text-cl;
+    color: var(--main-text-cl);
 }

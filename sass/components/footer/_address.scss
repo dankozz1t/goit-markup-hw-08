@@ -14,9 +14,9 @@
 }
 
 .address__link--white {
-    color: $light-text-cl;
+    color: var(--light-text-cl);
 }
 
 .address__link--grey {
-    color: $address-color;
+    color: var(--address-color);
 }

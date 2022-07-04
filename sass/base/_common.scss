@@ -1,7 +1,7 @@
 body {
-    font-family: $main-font;
-    color: $main-text-cl;
-    background: $main-bg-cl;
+    font-family: var(--main-font);
+    color: var(--main-text-cl);
+    background: var(--main-bg-cl);
 }
 
 .img {
@@ -20,11 +20,11 @@ body {
 .link {
     text-decoration: none;
 
-    transition: color $transition-time $transition-cubic;
+    transition: color var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
-        color: $accent-text-cl;
+        color: var(--accent-text-cl);
     }
 }
 

@@ -1,6 +1,6 @@
 .footer {
     padding: 60px 0;
-    background-color: $secondary-bg-cl;
+    background-color: var(--secondary-bg-cl);
 }
 
 .footer__container {
@@ -46,7 +46,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
 
-    color: $light-text-cl;
+    color: var(--light-text-cl);
 
     @media screen and (min-width: $table) {
         margin: 0 0 20px 0;

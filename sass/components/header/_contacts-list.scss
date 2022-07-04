@@ -38,35 +38,35 @@
   text-decoration: none;
   line-height: 1.17;
 
-  color: $secondary-text-cl;
-  fill: $secondary-text-cl;
+  color: var(--secondary-text-cl);
+  fill: var(--secondary-text-cl);
 
-  transition: color $transition-time $transition-cubic;
+  transition: color var(--transition-time) var(--transition-cubic);
 
   &--mail {
     font-size: 24px;
 
-    color: $secondary-text-cl;
+    color: var(--secondary-text-cl);
   }
 
 
   &--tel {
     font-size: 34px;
 
-    color: $accent-text-cl;
+    color: var(--accent-text-cl);
   }
 
   &:hover,
   &:focus {
-    color: $accent-text-cl;
-    fill: $accent-text-cl;
+    color: var(--accent-text-cl);
+    fill: var(--accent-text-cl);
   }
 
   @media screen and (min-width: $table) {
     display: flex;
     align-items: center;
     font-size: 12px;
-    color: $secondary-text-cl;
+    color: var(--secondary-text-cl);
   }
 
   @media screen and (min-width: $desktop) {

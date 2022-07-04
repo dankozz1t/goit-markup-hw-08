@@ -1,5 +1,5 @@
 .team {
-    background-color: $primary-section-bg-cl;
+    background-color: var(--primary-section-bg-cl);
     padding: 60px 0;
 
     @media screen and (min-width: $desktop) {
@@ -9,7 +9,7 @@
 
 
 // .team {
-//     background-color: $primary-section-bg-cl;
+//     background-color: var(--primary-section-bg-cl);
 
 
 //     @media screen and (min-width: ($desktop - 1px)) {
@@ -47,7 +47,7 @@
 // }
 
 .team__item {
-    background-color: $main-bg-cl;
+    background-color: var(--main-bg-cl);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -82,7 +82,7 @@
     letter-spacing: 0.03em;
     font-weight: 500;
 
-    color: $main-text-cl;
+    color: var(--main-text-cl);
 }
 
 .team__occupation {
@@ -93,7 +93,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
 
-    color: $secondary-text-cl;
+    color: var(--secondary-text-cl);
 }
 
 .team__social-list {

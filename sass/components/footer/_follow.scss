@@ -25,12 +25,12 @@
 
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: $light-text-cl;
+    fill: var(--light-text-cl);
 
-    transition: background-color $transition-time $transition-cubic;
+    transition: background-color var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
-        background-color: $accent-bg-cl;
+        background-color: var(--accent-bg-cl);
     }
 }

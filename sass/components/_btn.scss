@@ -11,7 +11,7 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-    color: $light-text-cl;
-    background-color: $accent-bg-cl;
+    color: var(--light-text-cl);
+    background-color: var(--accent-bg-cl);
     cursor: pointer;
 }

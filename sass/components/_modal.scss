@@ -13,7 +13,7 @@
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity $transition-time $transition-cubic;
+    transition: opacity var(--transition-time) var(--transition-cubic);
 
     @media screen and (min-width: $table) {
         padding: 208px 159px 0;
@@ -38,12 +38,12 @@
     max-width: 450px;
     padding: 40px;
 
-    background-color: $main-bg-cl;
+    background-color: var(--main-bg-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transition: transform $transition-time $transition-cubic;
+    transition: transform var(--transition-time) var(--transition-cubic);
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.1);
@@ -67,16 +67,16 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    background-color: $main-bg-cl;
+    background-color: var(--main-bg-cl);
 
-    transition: fill $transition-time $transition-cubic,
-        border-color $transition-time $transition-cubic;
+    transition: fill var(--transition-time) var(--transition-cubic),
+        border-color var(--transition-time) var(--transition-cubic);
 
 
     &:hover,
     &:focus {
-        fill: $accent-text-cl;
-        border-color: $accent-text-cl;
+        fill: var(--accent-text-cl);
+        border-color: var(--accent-text-cl);
     }
 }
 
@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
 
-    color: $main-text-cl;
+    color: var(--main-text-cl);
 }
 
 .form__title {
@@ -125,10 +125,10 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
 
-    color: $secondary-text-cl;
+    color: var(--secondary-text-cl);
 
     .form__field:focus-within & {
-        color: $accent-text-cl;
+        color: var(--accent-text-cl);
     }
 }
 
@@ -138,7 +138,7 @@
     outline: none;
 
     .form__field:focus-within & {
-        border-color: $accent-text-cl;
+        border-color: var(--accent-text-cl);
     }
 }
 
@@ -163,7 +163,7 @@
     display: inline-block;
 
     .form__field:focus-within & {
-        fill: $accent-text-cl;
+        fill: var(--accent-text-cl);
     }
 
 
@@ -197,7 +197,7 @@
     letter-spacing: 0.03em;
     margin: 0 0 30px 0;
 
-    color: $secondary-text-cl;
+    color: var(--secondary-text-cl);
 
     @media screen and (min-width: $desktop) {
         font-size: 14px;
@@ -214,15 +214,15 @@
     height: 15px;
     margin: 0 7px 0 0;
 
-    fill: $light-text-cl;
-    border: 2px solid $secondary-bg-cl;
+    fill: var(--light-text-cl);
+    border: 2px solid var(--secondary-bg-cl);
     border-radius: 2px;
 
     .form__checkbox:checked+& {
-        background-color: $accent-bg-cl;
+        background-color: var(--accent-bg-cl);
         border: transparent;
 
-        transition: transform $transition-time $transition-cubic;
+        transition: transform var(--transition-time) var(--transition-cubic);
     }
 
     .form__checkbox:hover+&,
@@ -232,7 +232,7 @@
 }
 
 .form__link {
-    color: $accent-text-cl;
+    color: var(--accent-text-cl);
 }
 
 .form__send {
@@ -240,7 +240,7 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transition: transform $transition-time $transition-cubic;
+    transition: transform var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {

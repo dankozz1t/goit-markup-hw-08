@@ -7,8 +7,8 @@
 
     text-align: center;
 
-    color: $light-text-cl;
-    background-color: $secondary-bg-cl;
+    color: var(--light-text-cl);
+    background-color: var(--secondary-bg-cl);
 
 
     background-image: linear-gradient(to right,
@@ -71,8 +71,8 @@
 }
 
 .hero__btn {
-    transition: color $transition-time $transition-cubic,
-        background-color $transition-time $transition-cubic;
+    transition: color var(--transition-time) var(--transition-cubic),
+        background-color var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {

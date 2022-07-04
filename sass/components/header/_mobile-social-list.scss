@@ -5,7 +5,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    color: $accent-text-cl;
+    color: var(--accent-text-cl);
 
     @media screen and (min-width: $table) {
         display: none;

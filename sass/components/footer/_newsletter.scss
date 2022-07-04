@@ -23,7 +23,7 @@
     width: 100%;
     height: 50px;
 
-    color: $light-text-cl;
+    color: var(--light-text-cl);
     background: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -33,7 +33,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     &:focus-within {
-        border-color: $accent-text-cl;
+        border-color: var(--accent-text-cl);
     }
 
     @media screen and (min-width: $table) {
@@ -51,15 +51,15 @@
     justify-content: center;
     align-items: center;
 
-    fill: $light-text-cl;
-    transition: color $transition-time $transition-cubic,
-        background-color $transition-time $transition-cubic;
+    fill: var(--light-text-cl);
+    transition: color var(--transition-time) var(--transition-cubic),
+        background-color var(--transition-time) var(--transition-cubic);
 
     &:hover,
     &:focus {
-        fill: $accent-text-cl;
-        color: $accent-text-cl;
-        background-color: $main-bg-cl;
+        fill: var(--accent-text-cl);
+        color: var(--accent-text-cl);
+        background-color: var(--main-bg-cl);
     }
 }
 
