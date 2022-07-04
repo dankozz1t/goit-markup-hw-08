@@ -58,7 +58,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  overflow: hidden;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
@@ -1423,7 +1422,10 @@ body {
           justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .filter__list {
@@ -1431,13 +1433,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.filter__item {
-  margin-top: 15px;
-}
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter__btn {
