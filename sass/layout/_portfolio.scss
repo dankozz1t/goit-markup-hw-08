@@ -22,22 +22,13 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    margin-top: -15px;
+    column-gap: 8px;
+    row-gap: 15px;
 
     @media screen and (min-width: $table) {
         justify-content: center;
     }
-
 }
-
-.filter__item {
-    margin-top: 15px;
-
-    &:not(:last-child) {
-        margin-right: 8px;
-    }
-}
-
 
 
 .filter__btn {
